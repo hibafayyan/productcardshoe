@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(61, 60, 60);
+    position: relative;
+    top: 60px;
+    left: 200px;
+    
+}
+         /* side bar starts here */
+aside {
+    width: 48%;
+    height: 100%;
+    background-color: rgb(233, 103, 27);
+    position: absolute;
+    /* z-index: 2; */
+    clip-path: circle(65.7% at 15% 49%);
+    
+}
+  
+                         /* shoe image */
+
+.shoe{
+    height: 480px;
+    position: absolute;
+    top: 150px;
+    left: -180px;
+    /* z-index: 5; */
+}
+                       /* right and left arrow icon */
+
+.icon{
+    position:absolute;
+    bottom: 80px; 
+    left:150px;
+    color: antiquewhite;
+    font-size:30px ;
+    cursor: pointer;
+
+}
+ 
+    .icon i.left:hover,
+.icon i.right:hover {
+    color: black;}
+
+                          /*nav bar starts here */
+
+.productinfo{
+    width: 35%;
+ position: absolute;
+ top: 20px;
+ left: 50%;
+ display: inline-block;
+  margin-top: 50px;
+}
+
+h1{
+    color: rgb(233, 103, 27);
+    font-size: 50px;
+    display: inline-block; 
+    width: 300px;
+    }
+ 
+.productinfo i{
+    color: white;
+    width: 30px;
+}
+
+ .productinfo .search:hover, .productinfo .user:hover, .productinfo .cart:hover{
+    color:rgb(233, 103, 27) ;
+    cursor: pointer;
+}
+                    /* section starts here */
+
+.details{
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    top:30% ;
+    left: 50%;
+}
+h2{
+    color: aliceblue;
+}
+.name {
+font-weight: 200px;
+color: aliceblue;
+font-size:32px ;
+line-height: 80px;
+display: block;
+}
+h4 {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
+ h4.dis{
+    display: inline-block;
+     }
+.dis{
+    text-decoration: line-through red;
+    
+}
+                              /* size selection  */
+ul {
+    list-style-type: none;
+    position: absolute;
+    top: 300%;
+    left: 3%;
+    color: #ffffff;
+    font-size: large;
+}
+
+li{
+    display: inline-block;
+}
+
+
+.bg{ 
+    padding: 2px; 
+    width: 15px;
+  height: 15px;
+  text-align: center;
+    
+} 
+.bg:hover{
+    background-color:rgb(233, 103, 27) ;
+     width: 20px;
+    height: 20px;
+     border-radius: 50%;
+    cursor:pointer ;
+} 
+
+                           /* color selection style */
+
+.color-box{
+position: absolute;
+width: 200px;
+margin-top: 50px;
+display: inline-block;
+}
+
+
+
+
+.color{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;   margin:0 15px 0 0px; 
+}
+
+ .yellow{
+background-color: yellow;
+
+ }
+ .black{
+background-color: black;
+ }
+
+ .blue{background-color: rgb(34, 168, 221);
+
+ }
+
+ .yellow:hover , .black:hover, .blue:hover{
+    border: 2px solid rgb(233, 103, 27);
+ }
+              /* footer section */
+
+ footer{
+    width: 500px;
+    position: absolute;
+    top:80px ;
+    margin-top: 20px;
+ }
+
+ footer span {
+    margin: 0 20px 0 0px;
+ }
+
+.bag:hover, .shop:hover{
+cursor: pointer; 
+color:rgb(233, 103, 27)
+}
+ /* the end :) */
