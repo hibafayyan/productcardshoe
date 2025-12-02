@@ -4,12 +4,14 @@
 }
 
 .container {
-    width: 80vw;
+    max-width: 800px;
     height: 90vh;
     background-color: rgb(61, 60, 60);
     position: relative;
-    top: 60px;
-    left: 200px;
+    /* top: 60px;
+    left: 140px; */
+    margin: 5vh auto;
+    
     
 }
          /* side bar starts here */
@@ -18,19 +20,21 @@ aside {
     height: 100%;
     background-color: rgb(233, 103, 27);
     position: absolute;
-    /* z-index: 2; */
-    clip-path: circle(65.7% at 15% 49%);
+
+     clip-path: circle(65.7% at 15% 49%);
+   
+   
     
 }
   
                          /* shoe image */
 
 .shoe{
-    height: 480px;
+    height: 350px;
     position: absolute;
     top: 150px;
-    left: -180px;
-    /* z-index: 5; */
+    left: -100px;
+    
 }
                        /* right and left arrow icon */
 
@@ -59,17 +63,20 @@ aside {
   margin-top: 50px;
 }
 
-h1{
+.productinfo h1{
     color: rgb(233, 103, 27);
     font-size: 50px;
-    display: inline-block; 
+    /* display: inline-block;  */
     width: 300px;
     }
- 
-.productinfo i{
+ .productinfo .search , .productinfo .user, .productinfo .cart{ color: white;
+    width: 30px;
+    display: inline-block;}
+/* .productinfo i{
     color: white;
     width: 30px;
-}
+    display: inline-block;
+} */
 
  .productinfo .search:hover, .productinfo .user:hover, .productinfo .cart:hover{
     color:rgb(233, 103, 27) ;
@@ -83,12 +90,13 @@ h1{
     position: absolute;
     top:30% ;
     left: 50%;
+    
 }
 h2{
     color: aliceblue;
 }
 .name {
-font-weight: 200px;
+font-weight: 200;
 color: aliceblue;
 font-size:32px ;
 line-height: 80px;
@@ -111,17 +119,24 @@ h4 {
     
 }
                               /* size selection  */
-ul {
+ #size{color: #ffffff;
+margin-top: 10px; }
+
+
+.size-list  {
     list-style-type: none;
     position: absolute;
     top: 300%;
     left: 3%;
-    color: #ffffff;
-    font-size: large;
-}
+     font-size: small;
+    }
+    .size-list li{
+        margin-top: 20px;
+    }
 
-li{
+ li{
     display: inline-block;
+    color: #ffffff;
 }
 
 
@@ -143,14 +158,19 @@ li{
                            /* color selection style */
 
 .color-box{
-position: absolute;
+/* position: absolute;
 width: 200px;
 margin-top: 50px;
-display: inline-block;
+display: inline-block; */
+ margin-top: 20px;
+    display: block;
+    padding-left: 0;
 }
 
 
-
+#color{
+    color: #ffffff;
+}
 
 .color{
     width:20px;
@@ -176,14 +196,15 @@ background-color: black;
  }
               /* footer section */
 
- footer{
+ .buy{
     width: 500px;
     position: absolute;
-    top:80px ;
-    margin-top: 20px;
+    top:230px ;
+    margin-top: 30px;
+    color: #ffffff;
  }
 
- footer span {
+ .buy span {
     margin: 0 20px 0 0px;
  }
 
@@ -192,3 +213,105 @@ cursor: pointer;
 color:rgb(233, 103, 27)
 }
  /* the end :) */
+
+
+                        /*                         media queries                   */
+
+@media (max-width: 700px)  {
+
+    /* CONTAINER */
+    .container {
+        width: 100%;
+     height: 100%; 
+    
+        background-color: rgb(61, 60, 60);
+        position: static;
+        overflow-y: visible;
+    }
+
+    /* ASIDE PART */
+    aside {
+        width: 100%;
+        height: 260px;
+        clip-path: circle(90% at 50% 0%);
+        position: static;
+        display: block;
+    }
+
+    /* SHOE IMAGE */
+    .shoe {
+        position: static;
+        display: block;
+        margin: -200px auto 0 auto; 
+        height: 250px;
+        
+        margin-top: 50px;
+    }
+
+    /* NAV (PRODUCTINFO) */
+    .productinfo {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .productinfo h1 {
+        font-size: 30px; 
+        
+    }
+    .productinfo i {
+        margin: 0 12px;
+        font-size: 15px;
+    }
+
+    /* DETAILS SECTION */
+    .details {
+        width: 100%;
+        position: static;
+        margin-top: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .details h2 {
+        font-size: 22px;
+    }
+    .details .name {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    /* SIZE LIST */
+    .size-list {
+        position: static;
+        margin-top: 20px;
+    }
+    .size-list li {
+        margin: 10px;
+    }
+
+    /* COLOR BOX */
+    .color-box {
+        margin-top: 25px;
+    }
+
+    /* BUY BUTTONS */
+    .buy {
+        width: 100%;
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .buy span {
+        display: inline-block;
+        margin: 10px;
+        padding: 8px 15px;
+        background: black;
+        border-radius: 5px;
+    }
+}
+
+
+
+
